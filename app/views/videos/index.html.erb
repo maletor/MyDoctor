@@ -1,0 +1,16 @@
+<%= render 'shared/header' %>
+
+<div class="grid_24" id="navigation"> 
+  <h3> 
+    <%= link_to "About", about_path, :class => "nav_link" %>
+    <%= link_to "Consultation", dashboard_path, :class => "nav_link" %>
+    <%= link_to "Videos", videos_path, :class => "nav_link current" %>
+    <%= link_to "Contact", dashboard_path, :class => "nav_link" %>
+  </h3> 
+</div> 
+
+<div class="clear"></div> 
+
+<%= render @videos %>
+
+<%= render 'shared/footer' %>

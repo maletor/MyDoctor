@@ -1,0 +1,19 @@
+<div class="grid_10" id="intro_photo"> 
+  <%= video_tag video.attachment.url, :controls => true, :autobuffer => true, :poster => video.poster.url %>
+</div> 
+
+<div class="grid_1">
+  <div class="photo_bar"></div>
+</div> 
+
+<div class="grid_13 intro"> 
+  <h1 class="title"><%= video.title %></h1> 
+  <h1 class="title_alt"><%= video.subtitle %></h1> 
+  <p><%= video.description %></p>
+</div> 
+<div class="clear"></div>
+<div class="grid_24">
+  <hr class="hr_dark" />
+  <hr class="hr_list" />
+</div> 
+<div class="clear"></div>
